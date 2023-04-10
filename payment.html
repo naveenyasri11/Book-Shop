@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta
+	name="viewport"
+	content="width=device-width,
+			initial-scale=1.0"/>
+	<link rel="stylesheet" href="payment.css"
+		class="css" />
+</head>
+<body>
+	<div class="container">
+	<div class="main-content">
+		<p class="text"></p>
+	</div>
+
+	
+
+	
+	</div>
+    <h1>Pay using Credit or Debit card</h1>
+
+	<div class="card-details">
+
+		<div class="customer-name">
+		<label> Customer Name </label>
+		<input
+			type="text"
+			class="card-number-field"
+			placeholder="Enter Your Name"/>
+		</div>
+		
+		<div class="account-number">
+		<label> Account Number </label>
+		<input type="text" class="date-number-field"
+				placeholder="############" />
+		</div>
+        
+
+		<div class="card holder name">
+		<label> Card Holder Name </label>
+		<input type="text" class="cvv-number-field"
+				placeholder="Holder Name" />
+		</div>
+        
+
+		<div class="bank & branch">
+		<label> Bank & Branch </label>
+		<input
+			type="text"
+			class="card-name-field"
+			placeholder="Name of Bank and Branch"/>
+		</div>
+        <br>
+        <br>
+		<button type="submit" class="btn" onclick="openPopup()">Submit</button>
+    <div class="popup" id="popup">
+        <img src="C:\Users\Lenovo\Downloads\thumbs up.jpg">
+        
+	</div>
+
+	<div class="signup-link">
+		<h4> </h4><a href="dropdowncss.html">Logout</a> </div>
+	   </div>
+    <script>
+        let popup=document.getElementById("popup");
+function openPopup(){
+    popup.classList.add("open-popup");
+}
+function closePopup(){
+    popup.classList.remove("open-popup");
+}
+    </script>
+</body>
+
+
+</html>
